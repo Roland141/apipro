@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components{
+            .myInput{
+                @apply w-[150px] block   rounded-lg border border-gray-200 bg-white px-5 py-4 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40  ;
+
+            }
+            .myBtn{
+                @apply  disabled:opacity-25 px-6 py-2 text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80;            
+            }
+            .myCard{
+                @apply w-[300px] h-[300px] border border-indigo-700 text-indigo-800;
+            }
+            .page-btn{
+                @apply w-[50px] h-[50px] border border-indigo-400;
+            }
+        }
+    </style>
+    <title>Login/Register</title>
+</head>
+<body>
+    <div class="loginRegister border flex justify-center gap-2 items-center p-2">
+      
+        <input class="myInput w-[250px] hidden"  type="text" id="username" placeholder="Username">
+        <input class="myInput w-[250px] hidden"  type="password" id="pw" placeholder="Password">
+        <button class="myBtn">Login</button>
+        <button class="myBtn">Register</button>
+    </div>
+   <div id="message-container"></div>
+<script type="module" src="main.js"></script>
+    
+</body>
+</html>
