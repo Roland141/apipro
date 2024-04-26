@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style type="text/tailwindcss">
         @layer components{
             .myInput{
@@ -24,6 +25,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
         }
         img{
             max-width: 300px;
@@ -37,7 +39,7 @@
             font-size: 2rem;
         }
         body{
-                
+            background-color: bisque;
         }
         .des1{
             border: 1px solid black;
@@ -55,6 +57,10 @@
             padding-bottom: 15px;
             
         }
+        .up{
+            position: relative;
+            left: 9.5%;
+        }
     </style>
     <title>Login/Register</title>
 </head>
@@ -69,16 +75,15 @@
         <button class="myBtn login">Login</button>
         <button class="myBtn register">Register</button>
         <button class="myBtn logout hidden" title="username">Logout</button>
+        <a href="fav.html"><button  class="fav">⭐</button></a>
         </div>
-        <ul>
-            <li><a href="">Favourites</a></li>
-          </ul>
-          
-   <div id="msg"></div>
+    <div id="msg"></div>
    <div class="loading">Loading...</div>
-    <input type="text" class="search">
-    <button class="asd">Search</button>
-    <button class="del">Refresh</button>
+   <div class="up">
+        <input type="text" class="search">
+        <button class="asd">Search</button>
+        <button class="del">Refresh</button>
+    </div>
     <div class="image-gallery"></div>
     <button class="des1" onclick="click()">More</button>
 <script type="module" src="main.js"></script>

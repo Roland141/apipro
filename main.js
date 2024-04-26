@@ -78,8 +78,7 @@ function search(){
     qString+=document.querySelector(".search").value
     console.log(qString);
     getData(url+page+qString,renderImages)
-
-
+    
 }
 document.querySelector('.del').addEventListener('click',del)
 function del(){
@@ -103,15 +102,6 @@ function renderImages(data){
     
     
 
-//window.addEventListener('scroll',handleScroll)
-//function handleScroll(){
-    //if(window.innerHeight+window.scrollY>=document.body.offsetHeight-200){
-        //document.querySelector('.loading').style.display='block'
-        //getData(url+qString,renderImages)
-
-    //}
-    
-//}
 window.addEventListener('click',click)
 function click(){
     document.querySelector('.loading').style.display='block'
